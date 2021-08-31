@@ -1,103 +1,544 @@
+/* início seção  cursos */
 
-/*
-Theme Name: Landing Page Kenzie Academy
-Theme URI: https://kenzie.com.br/
-Author: Kenzie Academy 
-Author URI: https://kenzie.com.br/
-Description: Descrção do thema.
-Version: 1.0
-Text Domain: https://kenzie.com.br/
-
---------------------------------------------
-ESTRUTURAÇÃO BASE
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** ESTILOS GERAIS
-**** BODY
-**** HEADER
-**** FOOTER
-**** PÁGINA INICIAL
-**** EXTRAS
-**** @MEDIA
-
-family=Montserrat -> Menus
-family=Lato -> Títulos, textos
-*/
-
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* FONTS */
-
-/* VARIÁVEIS */
-:root{}
-  
-/* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    list-style: none;
-}
-img{
-    max-width: 800px;
-}
-div.flex{
-    display: flex;
-}
-div.full-container{
+.secaoCursos{
     width: 100%;
     max-width: 1850px;
-    margin:0 auto;
-}
-div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
-}
-div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
-}
-/* GERAL */
-  
-/* HTML */
-html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
-/* HEADER */
-header{}
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
+    margin: 0 auto;
 
-/* INICIAL */
-main{}
-/* INICIAL */
+}
+.countainer__cursos{
+    padding-top: 60px;
+}
+.cursos_titulo{
+        font-size: 25px;
+        font-family: var(--font-monserrat);
+        color: var(--color-gray);
+        text-align: center;  
+}
+.cursos_subtitulo{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: var(--color-gray);
+    text-align: center;    
+}
+.lista_cursos{
+    padding-right: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.curso_item{
+    padding-left:15px ;
+    padding-top: 15px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 25px;
+    align-self: flex-end;
+}
+.curso_img{
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    max-width: 120px;
+}
+.curso_item_titulo{
+    font-size: 19px;
+    margin-top: 10px;
+    color: var(--color-gray);
+}
+.curso_item_subtitulo{
+    font-size: 15px;
+    margin-top: 35px;
+    line-height: 35px;
+    color: var(--color-greylight);
+}
+/* fim seção cursos */
 
-/* EXTRAS */
+
+/* inicio seção calendário */
+.secaoCalendario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+}
+.secaoCalendario h2 {
+    font-family: var(--font-monserrat);
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+
+}
+.secaoCalendario p {
+    font-family: var(--font-lato);
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    color: var(--color-greylight);
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--color-greylight);
+}
+.secaoCalendario_agendas {
+    display: flex;
+    flex-direction: column;
+}
+.secaoCalendario_bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-bluedark);
+    background-color: var(--color-bluedark);
+    margin-bottom: 30px;
+    max-width: 250px;
+    min-width: 190px;
+}
+.secaoCalendario_datas {
+    line-height: 85px;
+    font-size: 32px;
+    font-family: var(--font-lato);
+    color: var(--white);
+    background-color: var(--color-bluedark);
+    width: 100%;
+    text-align: center;
+    border: none;
+    color: var(--color-white);
+}
+.secaoCalendario_bloco h3 {
+    height: 68px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-family: var(--font-lato);
+    background-color: var(--color-white);
+}
+.secaoCalendario_bloco p {
+    background-color: var(--color-white);
+}
+.secaoCalendario_hora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-white);
+}
+.secaoCalendario_hora span {
+    line-height: 20px;
+    font-size: 32px;
+    height: 50px;
+    margin-top: 12px;
+    font-family: var(--font-lato);
+    color: var(--color-greylight);
+}
+.secaoCalendario_hora button {
+    color: var(--color-white);
+    background-color: var(--color-bluelight);
+    border: none;
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    font-size: inherit;
+    margin-bottom: 15px;
+}
+/* fim seção calendário */
+
+
+/* inicio seção contato */
+.flex-col .hidden{
+    display: none;
+}
+.col_input_dados{
+    margin-left: 0;
+}
+.secaoContato {
+    background-color: #f8f8f8;
+    font-family: var(--font-lato);
+    color: var(--color-gray);
+    display: flex;
+}
+.secaoContato h2 {
+    font-family: var(--font-monserrat);
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom: 15%;
+}
+.secaoContato h2 + p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--color-greylight);
+}
+.secaoContato li {
+    font-size: 14px;
+    margin-top: 20px;
+    
+}
+.secaoContato li:hover {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--grey);
+}
+.secaoContato li svg {
+    width: 15px;
+    text-align: center;
+    margin-right: 5px;
+    color: var(--color-greylight);
+}
+.secaoContato li a {
+    padding-left: 10px;
+    font-size: 13px;
+    color: var(--color-greylight);
+    text-decoration: none;
+}
+.secaoContato form {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 5%;
+}
+
+.secaoContato .form-input-model {
+    width: 100%;
+    margin: 5px 0;
+}
+.secaoContato input {
+    font-family: var(--font_general);
+    font-size: 14px;
+    color: var(--grey);
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+}
+.secaoContato .form-input-button  {
+    width: 60px;
+    color: var(--color-gray);
+    background-color: var(--color-white);
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20%;
+}
+.secaoContato .form-input-button:hover {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--color-greylight);
+    border-color: var(--color-greylight);
+}
+.secaoContato textarea {
+    font-family: var(--font-lato);
+    font-size: 14px;
+    color: var(--color-gray);
+    margin-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 8px;
+    height: 100px;
+}
+.secaoContato .flex {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.input_button{
+    display: flex;
+    justify-content: flex-end;
+}
+/* fim seção contato */
+
+
+/* inicio footer */
+footer p{
+    display: none;
+}
+footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+footer i {
+    color: var(--bluedark);
+}
+.seta_up{
+    margin-top: -40px;
+    max-width: 30px;
+    font-size: 80px;
+}
+/* final footer */
+
 
 /* para estilizar a scrollbar */
-::-webkit-scrollbar{}
+/* ::-webkit-scrollbar{}
 ::-webkit-scrollbar-button{}
 ::-webkit-scrollbar-track{}
 ::-webkit-scrollbar-track-piece{}
 ::-webkit-scrollbar-thumb{}
 ::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+::-webkit-resizer{} */
 
 /* EXTRAS */
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
-/* MEDIA QUERIES */
+    @media screen and (min-width: 960px) {
+        .secaoDestaque h2{
+            font-size: 63px;
+        }
+        .secaoDestaque p{
+            font-size: 21px;
+        }
+        .secaoDestaqueFormulario__input{
+            font-size: 14px;
+        }
+        .secaoDestaqueFormulario__button {
+            font-size: 14px;
+        }
+        .secaoSobre__h2{
+            font-size: 24px;
+        }
+        .secaoSobre__p{
+            font-size: 19px;
+        }
+        .container__secaoSobre{
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-top: 0;
+        }
+        .column__secaoSobre{
+            width: 50%;
+            height: 100rem;
+            max-height: 500px;
+            padding: 5% 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .secaoSobre__img--pyth {
+            width: 100%;
+            max-width: 400px;
+        }
+        .secaoSobre__img--js {
+            width: 80%;
+            max-width: 50%;
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .fa-bars{
+            display: none;
+        }
+        .header__nav{
+            width: 350px;
+        }
+        .header__ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .header__li{    
+            opacity: 70%;
+        }
+        .header__li:hover{
+            opacity: 100%;
+        }
+        .header-container a{
+            color: var(--color-white);
+            font-family: var(--font-lato);
+            font-size: 13px;
+            font-stretch: extra-expanded;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .header-container{
+            justify-content: space-around;
+            padding: 1%;
+        }
+        .secaoDestaque {
+            background-image: url("/assets/img/background-destaque.webp");
+            background-size: cover;
+        }
+        .curso_item{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 30%;
+        }
+        .secaoDestaque {
+            padding: 10% 10% 15% 10%;
+        }
+        .secaoDestaque p, .secaoDestaqueFormulario{
+            padding: 3% 0 0 0;
+        }
+        .secaoCalendario h2 {
+            font-size: 19px;
+        }
+        .secaoCalendario p {
+            font-size: 15px;
+        }
+        .secaoCalendario_agendas {
+            flex-direction: row;
+            gap: 15px;
+        }
+        .secaoCalendario_datas {
+            font-size: 36px;
+        }
+        .secaoCalendario_hora button {
+            font-size: 28px;
+            height: 50px;
+        }
+        .secaoContato form {
+            width: 100%;
+            margin-top: 100px;
+            padding-top: 0;
+        }
+        .secaoContato h2 {
+            padding-left: 0;
+            margin-left: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            transform: translateX(-20vw);
+            height: 50px;
+            margin-top: 25px;
+            margin-bottom: 0;
+        }
+        .secaoContato .secaoContato-informacoes p {
+            margin-top: 25px;
+        }
+        .secaoContato form  .first-input {
+            margin-top: 0;
+        }
+        .secaoContato .flex-col {
+            width: 50%;
+        }
+        .secaoContato p, .secaoContato ul {
+            width: 100%;
+        }
+        .input_button{
+            width: 95%;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+        .fa-bars{
+            display: none;
+        }
+        .header__nav{
+            width: 350px;
+        }
+        .header__ul{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .header__li{    
+            opacity: 70%;
+        }
+        .header__li:hover{
+            opacity: 100%;
+        }
+        .header__li a{
+            text-decoration: none;
+            font-stretch: extra-expanded;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+        .header-container{
+            justify-content: space-around;
+            padding: 1%;
+        }
+        .secaoDestaque {
+            background-image: url("/assets/img/background-destaque.webp");
+            background-size: cover;
+        }
+        .curso_item{
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 30%;
+        }
+        .secaoDestaque {
+            padding: 10% 10% 15% 10%;
+        }
+        .secaoDestaque p, .secaoDestaqueFormulario{
+            padding: 3% 0 0 0;
+        }
+        .flex-col form{
+            margin-left: -80px;
+        }
+        .secaoCalendario h2 {
+            margin-top: 70px;
+            font-size: 25px;
+        }
+        .secaoCalendario p {
+            font-size: 15px;
+        }
+        .secaoCalendario_agendas {
+            flex-direction: row;
+            gap: 15px;
+        }
+        .secaoCalendario_datas {
+            font-size: 36px;
+        }
+        .secaoCalendario_hora button {
+            font-size: 32px;
+            height: 50px;
+        }
+        .secaoContato .flex {
+            display: flex;
+            width: 80%;
+        }
+        .col_input_dados{
+            display: flex;
+            width: 100%;
+        }
+        .secaoContato form {
+            width: 100%;
+            margin-top: 140px;
+            padding-top: 0;
+        }
+        .secaoContato h2 {
+            margin-top: 80px;
+            margin: 80px auto;
+            padding-left: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            transform: translateX(-10vw);
+            height: 50px;
+            margin-bottom: 0;
+        }
+        .input_button{
+            width: 95%;
+        }
+        .secaoContato .secaoContato-informacoes {
+            font-size: 15px;
+        }
+        .secaoContato .secaoContato-informacoes p {
+            margin-top: 25px;
+        }
+        .secaoContato form  .first-input {
+            margin-top: 0;
+        }
+        .secaoContato .flex-col {
+            width: 50%;
+        }
+        .secaoContato p, .secaoContato ul {
+            width: 100%;
+        }
+        .form-input-model input{
+            width: 90%;
+        }
+        .form-input-model textarea{
+            width: 95%;
+        }
+        footer p{
+            display: block;
+        }
+    }
